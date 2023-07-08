@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="warpper">
+        <div class="container">
+            <h3>Password Generator</h3>
+            <input type="text"  id="showPassword">
+          <div class="Length">
+            <label for="Length">Length</label>
+            <input type="number" min="6" max="20" id="passwordLen">
+          </div>
+          <div class="includeSymbols">
+            <label for="Symbol">Include Symbol</label>
+            <input type="checkbox"  id="SymbolCheckBox">
+          </div>
+          <div class="includeNumber">
+            <label for="Number">Include Number</label>
+            <input type="checkbox"  id="numberCheckBox">
+          </div>
+          <div class="includeLowercase">
+            <label for="LoweCase">Include lowerCase</label>
+            <input type="checkbox"  id="lowerCaseCheckBox">
+          </div>
+          <div class="includeUpperCase">
+            <label for="upperCase">Include UpperCase</label>
+            <input type="checkbox"  id="upperCaseCheckBox">
+          </div>
+          <button id="btn">Genrate Password</button>
+        </div>
+    </div>
+</body>
+</html>
