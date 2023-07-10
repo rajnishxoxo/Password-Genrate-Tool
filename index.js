@@ -16,10 +16,10 @@ function getData(list) {
 
 function genratePasswordString() {
   if (
-    includeSymbol.checked ===false &&
+    includeSymbol.checked === false &&
     includeNumber.checked === false &&
-    includeLowercase.checked ===false &&
-    includeUpperCase.checked===false
+    includeLowercase.checked === false &&
+    includeUpperCase.checked === false
   ) {
     alert("Please Select One feild");
   } else {
@@ -83,4 +83,22 @@ clipboardImage.addEventListener("click", function () {
   }
 
   copytext();
+
+  reset();
 });
+
+function reset() {
+  passwordBox.value = "";
+  let includeSymbol = (document.getElementById(
+    "SymbolCheckBox"
+  ).checked = false);
+  let includeNumber = (document.getElementById(
+    "numberCheckBox"
+  ).checked = false);
+  let includeLowercase = (document.getElementById(
+    "lowerCaseCheckBox"
+  ).checked = false);
+  let includeUpperCase = (document.getElementById(
+    "upperCaseCheckBox"
+  ).checked = false);
+}
