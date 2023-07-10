@@ -84,7 +84,7 @@ clipboardImage.addEventListener("click", function () {
 
   copytext();
 
-  reset();
+  
 });
 
 function reset() {
